@@ -1,16 +1,16 @@
 # Angular Unit Testing
 
-This article is about Angular Unit Testing and not Testing at all. It will give you some example tests to introduce you in testing in Angular. After this it is about you to dive deeper in it. Well, with that let's dive in.
+This article is about Angular Unit Testing and not Testing at all. It will give you some example tests to introduce you in testing in Angular. After this it is about you to dive deeper in it.
 
-Why Unit Test? Guess you have created a new Angular app and want to know if your components, pipes and services work as intended. The answer will give you Unit Tests. You also might want to know if the input works as intended or the injection works as intended. These are questions we want to cover with Unit Tests. Writing the correct test to get the correct answer will be an important part. But keep in mind, this article cannot cover up all cases. Unit Testing is an extensive topic by his own. The goal of this article is to show you how to use Unit Testing in Angular apps and not philosophize about how tests should be written.
+Why Unit Test? Guess you have created a new Angular app and want to know if your components, pipes and services work as intended. The answer will give you Unit Tests. Writing the correct test to get the correct answer will be an important part. But keep in mind, this article cannot cover up all cases. Unit Testing is an extensive topic by his own. The goal of this article is to show you how to use Unit Testing in Angular apps and not philosophize about how tests should be written.
 
-Unit Tests allow us to guard against breaking changes. Once written we can use them to run as often as we needed. When we update our app and a test fails, we know exactly where in our app is the failure. We can also analyze code behavior for expected and unexpected results and we can reveal design mistakes. Maybe when we writing our test we come to a mistake in design of our app. Here tests can help us.
+Unit Tests allow us to guard against breaking changes. Once written we can use them to run as often as we needed. When we update our app and a test fails, we know exactly where in our app is the failure. We can also analyze code behavior for expected and unexpected results and we can reveal design mistakes. Maybe when we writing our test we come to a mistake in design of our app. Tests can help us.
 
-For this lecture we create a brand new Angular app with the Angular CLI. Run the CLI command `ng new` and provide the name `testing-app`, as shown here:
+For this lecture we create a brand new Angular app with the command line interface (CLI) of Angular. Run the CLI command `ng new` and provide some name like `testing-app`, as shown here:
 
     ng new testing-app
 
-Your new app comes with some Unit Tests included. Take a look at the source files you will see the test file called `app.component.spec.ts`. The suffix `...spec.ts` is reserved for the test files and will come with every new component you create throught console. Open in the editor it should look like that.
+Your new app comes with some Unit Tests included. Take a look at the source files you will see the test file called `app.component.spec.ts`. The suffix `...spec.ts` is reserved for the test files and will come with every new component you create through console. Open in the editor it should look like that.
 
     import { TestBed, async } from '@angular/core/testing';
     import { AppComponent } from './app.component';
@@ -44,14 +44,14 @@ Your new app comes with some Unit Tests included. Take a look at the source file
         });
     });
 
-You see three `it` blocks here. Every block is a test. The `beforeEach` function will be executed - you guess it - before each test, before each `it` block. But, well, let's get into it step by step. 
+You see three `it` blocks here. Every block is a test. The `beforeEach` function will be executed - you guess it - before each test. But, well, let's get into it line by line. 
 
     import { TestBed, async } from '@angular/core/testing';
     import { AppComponent } from './app.component';
 
     describe('AppComponent', () => {
 
-At the top we `import` two tools from the Angular core testing package: `TestBed` and `async`. Then we `describe` the testing unit, which is our app component in this case. We then have a closure `() => {` for the `describe` function. Evertyhing in there will be executed by the test runner Angular comes with: Karma. 
+At the top we `import` two tools from the Angular core testing package: `TestBed` and `async`. This tools we need to set up our testing environment. Then we `describe` the testing unit, which is our app component in this case. We then have a closure `() => {` for the `describe` function. Evertyhing in there will be executed by the test runner Angular comes with: [Karma][1]. 
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
@@ -61,7 +61,7 @@ At the top we `import` two tools from the Angular core testing package: `TestBed
         }).compileComponents();
     }));
 
-Then the `beforeEach` function will execute some code before each test. Keep in mind, that every test (`it` block) will be run totally independent by the test before, even if they are written down one after another. So the second block is not be influenced by the first block and vice versa. In the `beforeEach` block we configure a testing module as this method on the `TestBed`. `TestBed` is the Angular main testing object. This allow us to configure the module for our testing. Then we simply declare the component we want to have for this testing environment: `AppComponent`. This declaration looks like the one in the file `app.module.ts` without the `imports`, `providers` and `bootstrap`. That make sense, because we don't want to run the app in the browser. We only want to focus at the component for testing. The rest will be simulated by the testing environment.
+Then the `beforeEach` function will execute some code before each test. Keep in mind, that every test (`it` block) will be run totally independent by the test before, even if they are written down one after another. So the second block is not be influenced by the first block and vice versa. In the `beforeEach` block we configure a testing module as a method on the [`TestBed`][8]. `TestBed` is the Angular main testing object. This allow us to configure the module for our testing. Then we simply declare our component we want to have for this testing environment: `AppComponent`. This declaration looks like the one in the file `app.module.ts` without the `imports`, `providers` and `bootstrap`. That make sense, because we don't want to run the app in the browser. We only want to focus at the component for testing. The rest will be simulated by the testing environment.
 
     it('should create the app', () => {
         const fixture = TestBed.createComponent(AppComponent);
@@ -69,7 +69,7 @@ Then the `beforeEach` function will execute some code before each test. Keep in 
         expect(app).toBeTruthy();
     });
 
-Then we get a couple of tests. The first one checks if the app is already created. We always need to create the component in every `it` block for encapsulated testing. This will done by `TestBed` in the `fixture` variable. Then we can get our app by `fixture`, which holds our created component. With the `debugElement` we look at the `componentInstance`, which was created and which is our comonent at the end. We always end a `it` block by using the `expect` method. The `it` and `expect` are both Jasmine packages. So, at last of our first test we `expect` our `app` `toBeTruthy`, which means somehow existent.
+Then we get a couple of tests. The first one here checks if the app is already created. We always need to create the component in every `it` block for encapsulated testing. This will done by `TestBed` in the `fixture` variable. Then we can get our app by `fixture`, which holds our created component. With the `debugElement` we look at the `componentInstance`, which was created and which is our comonent at the end. We always end a `it` block by using the `expect` method. The `it` and `expect` are both Jasmine packages. So, at last of our first test we `expect` our `app` `toBeTruthy`, which means somehow existent.
 
     it(`should have as title 'testing-app'`, () => {
         const fixture = TestBed.createComponent(AppComponent);
@@ -77,7 +77,7 @@ Then we get a couple of tests. The first one checks if the app is already create
         expect(app.title).toEqual('testing-app');
     });
 
-In the next block we check it `should have as title 'testing-app'`, because this is the setup in the `app.component.ts`, where we get the title property, which will be output in the file `app.component.html` with string interpolation. So it should have the title. We create the component, we get access to the instance and then we expect that the app get this title property which equals `testing-app`, this string. This is only true as long we don't change or remove the title. That is how you write your tests. You have to reflect your actual application.
+In the next block we check it `should have as title 'testing-app'`, because this is the setup in the `app.component.ts`, where we get the title property, which will be output in the file `app.component.html` with string interpolation. So it should have the title. We create the component, we get access to the instance and then we expect that the app get this title property which equals `testing-app`. This is only true as long we don't change or remove the title. That is how you write your tests. You have to reflect your actual application.
 
     it('should render title in a h1 tag', () => {
         const fixture = TestBed.createComponent(AppComponent);
@@ -86,13 +86,13 @@ In the next block we check it `should have as title 'testing-app'`, because this
         expect(compiled.querySelector('h1').textContent).toContain('Welcome to testing-app!');
     });
 
-Finally we check `should render title in a h1 tag`. We create the component again and then we call `detectChanges` to trigger change detection. That is the only we to do it, since it runs automaticaly and not in the browser. With this the template gets rendered. Then with the `debugElement` we look at the `nativeElement` and expect in the compiled template a `h1` tag, which contains the string `Welcome to testing-app!`.****
+Finally we check `should render title in a h1 tag`. We create the component again and then we call `detectChanges` to trigger change detection. That is the only way to do it, since it runs automaticaly and not in the browser. With this the template gets rendered. Then with the `debugElement` we look at the `nativeElement` and expect in the compiled template a `h1` tag, which contains the string `Welcome to testing-app!`.
 
-To see Karma and Jasmine in Action just open a terminal again and run it.
+Now, to see [Karma][1] and [Jasmine][2] in Action just open a terminal again and run the tests.
 
     ng test
 
-A chrome browser will be opened automatically and with ouput the test results and the app itself.
+A chrome browser will be opened automatically and displays the test results and the app itself.
 
 ![Karma and Jasmine](img/testing-app_ng-test_success_browser.png)
 
@@ -104,7 +104,7 @@ Even in the terminal you see the debug information.
 
 ![Karma and Jasmine](img/testing-app_ng-test_failure_console.png)
 
-The error messages gives you some helpful information to fix the bug. In our case the unexpected title gives us two errors. The second and third test of our `app.component.spec.ts` fail. Fixing the title and rerun the test gives us certainty about the flaw of our app.
+The error messages gives you some helpful information to fix the bug. In our case the unexpected title gives us two errors. The second and third test of our `app.component.spec.ts` fail. The title isn't `testing-app` anymore. Fixing the title and rerun the test gives us certainty about the flaw of our app.
 
 ---
 
@@ -114,7 +114,7 @@ Let's dive a little bit deeper into testing. Just create a new component, for ex
 
     ng g c user
 
-We know `g` stands for 'generate' and `c` for component. Our template in `user.component.html` in the folder `app/user` should contain something like this.
+We know `g` stands for 'generate' and `c` for 'component'. Our template in `user.component.html` in the folder `app/user` should contain something like this.
 
     <div *ngIf="isLoggedIn">
         <h1>User logged in</h1>
@@ -125,9 +125,9 @@ We know `g` stands for 'generate' and `c` for component. Our template in `user.c
         <p>Please log in first</p>
     </div>
 
-Here are two div blocks, which will be displayed if the user is logged in or not. If it is true, we should see the name of the user. The variable `isLoggedIn` is to declare in our component, in the file `user.component.ts`, as well as our user object, which contains the name. Our component should be like this.
+Here are two div blocks, which will be displayed if the user is logged in or not. If it is true, he should see the name of the user. The variable `isLoggedIn` is to declare in our component, in the file `user.component.ts`, as well as our user object, which contains the name. Our component should be like this.
 
-import { Component, OnInit } from '@angular/core';
+    import { Component, OnInit } from '@angular/core';
 
     @Component({
         selector: 'app-user',
@@ -144,9 +144,7 @@ import { Component, OnInit } from '@angular/core';
         }
     }
 
-Let's have a look at the file `app.modules.ts` if our `UserComponent` is imported and declared the right way. It should be all fine while it is generated through the console.
-
-Now, let's see what our spec file of `UserComponent` contains, which is already created.
+Let's have a look at the file `app.modules.ts` if our `UserComponent` is imported and declared the right way. It should be all fine while it is generated through the console. Now, let's see what our spec file of `UserComponent` contains, which is already created.
 
     import { async, ComponentFixture, TestBed } from '@angular/core/testing';
     import { UserComponent } from './user.component';
@@ -173,7 +171,7 @@ Now, let's see what our spec file of `UserComponent` contains, which is already 
         });
     });
 
-Step by Step.
+Line by line.
 
     import { async, ComponentFixture, TestBed } from '@angular/core/testing';
     import { UserComponent } from './user.component';
@@ -189,7 +187,7 @@ We `import` what we need to run the test of `UserComponent`. Then we `describe` 
         .compileComponents();
     }));
 
-In the first `beforeEach()` method we declare our module again. `TestBed` is the main testing object, which gives us access to all the testing utilities for configuring the Angular app. The call of `configureTestingModule` expect an javascript object where you declare the objects like in `@NgModule`, in this case `UserComponent`. If you are not using the cli or any other WebPack based setup you need to `compileComponents` after.
+In the first `beforeEach()` method we declare our module again. `TestBed` is the main testing object, which gives us access to all the testing utilities for configuring the Angular app. The call of `configureTestingModule` expect an javascript object where you declare the objects like in `@NgModule`, in this case `UserComponent`. If you are not using the CLI or any other [webpack][9] based setup you need to `compileComponents` after.
 
     beforeEach(() => {
         fixture = TestBed.createComponent(UserComponent);
@@ -197,15 +195,13 @@ In the first `beforeEach()` method we declare our module again. `TestBed` is the
         fixture.detectChanges();
     });
 
-In the next `beforeEach()` method we created the fixture again, where we use the `TestBed` to `createComponent` and in this case the `UserComponent`. Now we created this component in our testing environment. With the `fixture` you get your `component` and we do this with the access to your `componentInstance`. This is your component running one instance. You should tell `TestBed` to perform data binding by calling `fixture.detectChanges()` to detect updates from our app.
-
-Both `beforeEach()` methods run for each test.
+In the next `beforeEach()` method we created the fixture again, where we use the `TestBed` to `createComponent` and in this case the `UserComponent`. Now we created this component in our testing environment. With the `fixture` you get your `component` and you do this with the access to your `componentInstance`. This is your component running one instance. You should tell `TestBed` to perform data binding by calling `fixture.detectChanges()` to detect updates from our app. Both `beforeEach()` methods run for each test.
 
     it('should create', () => {
         expect(component).toBeTruthy();
     });
 
-Actually we can write the test. We `expect` the `component` `toBeTruthy`. This just checks if it exists. Se if it works by starting the test in the console with `ng test`. You should see TOTAL 4 SUCCESS executed tests. It worked. This was a very simple test.
+Actually we can write the test. We `expect` the `component` `toBeTruthy`. This just checks if it exists. See if it works by starting the test in the console with `ng test`. You should see TOTAL 4 SUCCESS executed tests. It worked. This was a very simple test.
 
 ---
 
@@ -219,7 +215,7 @@ So far so simple. Let's spice it up and add and test some service for our user. 
         };
     }
 
-In this file you export your `UserService` class and in this class you will have a `user` object which you can retrieve from your component. It only contains one `name`. A very very simple service, which should be imported in our `user.component.ts`.
+In this file you export your `UserService` class and in this class you will have a `user` object which you can retrieve from your component. It only contains one `name`. A very very simple service which should be imported in our `user.component.ts`.
 
     import { UserService } from './user.service';
     import { Component, OnInit } from '@angular/core';
@@ -241,9 +237,7 @@ In this file you export your `UserService` class and in this class you will have
         }
     }
 
-In the component we `import` the `UserService` and count it to the `providers` in the `@Component()` decorator. In our constructor we inject our service with `private userService:` of type `UserService`. Then you can say `ngOnInit()` `this.user` is equal `this.userService.user`. This happens synchronously, but we inject something. This is how we bring the app to work. But how should bring we the test to work?
-
-We wanna get the user name from the service. So let's create a new test for that. Just open the file `user.component.spec.ts` again.
+In the component we `import` the `UserService` and count it to the `providers` in the `@Component()` decorator. In our constructor we inject our service with `private userService:` of type `UserService`. Then you can say `ngOnInit()` `this.user` is equal `this.userService.user`. This happens synchronously but we inject something. This is how we bring the app to work. But how should bring we the test to work? We want to get the user name from the service. So let's create a new test for that. Just open the file `user.component.spec.ts` again.
 
     it('should display the user name if user is logged in', () => {
         component.isLoggedIn = true;
@@ -252,7 +246,7 @@ We wanna get the user name from the service. So let's create a new test for that
         expect(compiled.querySelector('p').textContent).toContain(component.user.name);
     });
 
-With `it` we start and describe our test. In our `component` (declared in the second `beforeEach()`) we checked if `isLoggedIn` is `true`. To detect the changes in our app we call `fixture.detectChanges()` again. After that we declare a constant for our `compiled` app, because we don't start the app in the browser and therefore the browser don't take the job to compile our app. This we will get get through one `fixture.debugElement` called `nativeElement`. Last we `expect` - and here we should take a look into our component template - in the `compiled` app, that a paragraphs (`querySelector('p')`) `textContent` contains the `component.user.name`. Let's do a similar test for the opposite.
+With `it` we start and describe our test. In our `component` (declared in the second `beforeEach()`) we checked if `isLoggedIn` is `true`. To detect the changes in our app we call `fixture.detectChanges()` again. After that we declare a constant for our `compiled` app, because we don't start the app in the browser and therefore the browser don't take the job to compile our app. This we will get get through one `fixture.debugElement` called `nativeElement`. Last we `expect` - and here we should take a look into our component template - in the `compiled` app that a paragraphs (`querySelector('p')`) `textContent` contains the `component.user.name`. Let's do a similar test for the opposite.
 
     it('should\'t display the user name if user is not logged in', () => {
         component.isLoggedIn = false;
@@ -267,7 +261,7 @@ This test is almost equal to the test above, accept of the state, that if the us
 
 ## Testing async
 
-So far we tested synchronous. What if we want to test asynchronous services, which we might have in our app with some external web services? For this scenario create a new folder called `shared` in our `app` directory and in there a file called `data.service.ts`. This service will expose a asynchronous function we wanna test.
+So far we tested synchronous. What if we want to test asynchronous services which we might have in our app with some external web services? For this scenario create a new folder called `shared` in our `app` directory and in there a file called `data.service.ts`. This service will expose a asynchronous function we want to test.
 
     export class DataService {
         getDetails() {
@@ -280,7 +274,7 @@ So far we tested synchronous. What if we want to test asynchronous services, whi
         }
     }
 
-We `export` a `class` `DataService` and this will have a `getDetails()` method, which will have a promise, the `resultPromise`. This will be a `new Promise()` where we pass `resolve` and `reject` as arguments for the callback repassing to the promise constructor. Then we basicly `setTimeout()` to one and a half second `1500` and execute another function where we simply `resolve('Data')`, pass back a string holding `Data`. Outside of this promise we `return resultPromise`. Before testing we user the new service in our `user.component.ts`.
+We `export` a `class` `DataService` and this will have a `getDetails()` method, which will have a promise, the `resultPromise`. This will be a `new Promise()` where we pass `resolve` and `reject` as arguments for the callback repassing to the promise constructor `() => {}`. Then we basicly `setTimeout()` to one and a half second `1500` and execute another function where we simply `resolve('Data')`, pass back a string holding `Data`. Outside of this promise we `return resultPromise`. Before testing we use the new service in our `user.component.ts`.
 
     import { UserService } from './user.service';
     import { DataService } from '../shared/data.service';
@@ -304,7 +298,7 @@ We `export` a `class` `DataService` and this will have a `getDetails()` method, 
         }
     }
 
-We `import` the `DataService` from `../shared/data.service` and provide it in the `@Component` decorator like the user service. The we create a property called `data` of type `string`. In the `constructor` we wanna inject this to get access to the instance of it. This we do with `private dataService: DataService`. Now we can wright some tests. Get back to the file `user.component.spec.ts`.
+We `import` the `DataService` from `../shared/data.service` and provide it in the `@Component` decorator like the `UserService`. The we create a property called `data` of type `string`. In the `constructor` we want to inject this to get access to the instance of it. This we do with `private dataService: DataService`. Now we can wright some tests. Get back to the file `user.component.spec.ts`.
 
     it('should\'t fetch data successfully if not called asynchronously', () => {
         const dataService = fixture.debugElement.injector.get(DataService);
@@ -313,9 +307,9 @@ We `import` the `DataService` from `../shared/data.service` and provide it in th
         expect(component.data).toBe(undefined);
     });
 
-First let's do a normal test if it should't fetch data successfully if not called asynchronously. This is not a great test, because we are testing features of the testing packages and not of the app. But it will bring up the difference between this test and the next async test (see below). In this test we pass a function `() => {}` as a second parameter and inside this call back we want to get access to our `getDetails()` method, which happens asynchronously. The thing is, we don't necessarily want to execute the real `getDetails()` method, because this method might reach out to a server and in a real application we don't wanna reach out to the server all the time when testing it. Instead we wanna kind of fake it. We wanna create a fake implementation which is still asynchronous but does provide some dummy data. 
+First let's do a normal test if it shouldn't fetch data successfully if not called asynchronously. This is not a great test, because we are testing features of the testing packages and not of the app. But it will bring up the difference between this test and the next async test (see below). In this test we pass a function `() => {}` as a second parameter and inside this callback we want to get access to our `getDetails()` method, which happens asynchronously. The thing is, we don't necessarily want to execute the real `getDetails()` method, because this method might reach out to a server and in a real application we don't want to reach out to the server all the time when testing it. Instead we want to kind of fake it. We want to create a fake implementation which is still asynchronous but does provide some dummy data. 
 
-Therefore we create a new variable `spy` and do something like `spyOn()`, which is given to us through the testing environment. It is not Angular specific. Inside we tell we wanna spy on `dataService` and on the `getDetails` method there. Then we chain something with `and` and `returnValue`. So we get informed when `getDetails` gets executed and return a value on our own. The value we will return here is `Promise.resolve('Data')`. Then we run the change detection with `fixture.detectChanges()` after we got the data and check if that worked. So we `expect` our `component.data` `toBe` `undefined`. Normally we do expect some kind of `Data` but we know this will fail. Therefore we write another test.
+Therefore we create a new variable `spy` and do something like `spyOn()`, which is given to us through the testing environment. It is not Angular specific. Inside we tell we want to spy on `dataService` and on the `getDetails()` method there. Then we chain something with `and` and `returnValue`. So we get informed when `getDetails()` gets executed and return a value on our own. The value we will return here is `Promise.resolve('Data')`. Then we run the change detection with `fixture.detectChanges()` after we got the data and check if that worked. So we `expect` our `component.data` `toBe` `undefined`. Normally we do expect some kind of `Data` but we know this will fail. Therefore we write another test.
 
 The data we will get will be initialized in the file `user.component.ts` on init. Open the file and add this one line of code to `ngOnInit()`.
 
@@ -360,9 +354,7 @@ In your `shared` folder create a file named `reverse.pipe.ts`.
         }
     }
 
-This is a simple pipe which only needs `Pipe` and `PipeTransform` to be imported from the `@angular/core`. In the `@Pipe` decorator we `name` it `reverse` and then export the `class ReversePipe` which `implements PipeTransform`. What this pipe do is to `transform` a `value` of type `string` and `return` it, after it has taken the value, `split()` it in his single characters, `reverse()` it `join()` it again, so each character is attached to the character before it without white space in between.
-
-Let's test it by creating a file `reverse.pipe.spec.ts` in the same `shared` folder.
+This is a simple pipe which only needs `Pipe` and `PipeTransform` to be imported from the `@angular/core`. In the `@Pipe` decorator we `name` it `reverse` and then export the `class ReversePipe` which `implements PipeTransform`. What this pipe do is to `transform` a `value` of type `string` and `return` it, after it has taken the value, `split()` it in his single characters, `reverse()` it and `join()` it again, so each character is attached to the character before it without white space in between. Let's test it by creating a file `reverse.pipe.spec.ts` in the same `shared` folder.
 
     import { ReversePipe } from './reverse.pipe';
 
@@ -379,10 +371,20 @@ The only thing we need to `import` is the `ReversePipe`. Therefore it is an isol
 
 ## Sources
 
-[1] [Karma - Test Runner for JavaScript](https://github.com/karma-runner/karma)  
-[2] [Jasmine - Behavior-Driven JavaScript](https://github.com/jasmine/jasmine.github.io)  
-[3] [Basic Introduction to Unit Testing in Angular Apps (Video Tutorial)](https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/t/lecture/5951176?start=0)  
-[4] [Angular Testing (Official Documentation)](https://angular.io/guide/testing)  
-[5] [Step by Step Custom Pipes in Angular](https://toddmotto.com/angular-pipes-custom-pipes)  
-[6] [Testing Components in Angular 2 with Jasmine](https://semaphoreci.com/community/tutorials/testing-components-in-angular-2-with-jasmine)  
-[7] [Unit Tests with CLI](https://angular.io/cli/test)  
+[Karma - Test Runner for JavaScript][1]  
+[Jasmine - Behavior-Driven JavaScript][2]  
+[Angular Testing (Official Documentation)][4]  
+[Basic Introduction to Unit Testing in Angular Apps (Video Tutorial)][3]  
+[Testing Components in Angular 2 with Jasmine][6]  
+[Unit Tests with CLI][7]  
+[webpack Concepts][9]
+
+[1]: https://github.com/karma-runner/karma "Karma - Test Runner for JavaScript"
+[2]: https://github.com/jasmine/jasmine.github.io "Jasmine - Behavior-Driven JavaScript" 
+[3]: https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/t/lecture/5951176?start=0 "Basic Introduction to Unit Testing in Angular Apps (Video Tutorial)"
+[4]: https://angular.io/guide/testing "Angular Testing (Official Documentation)"
+[5]: https://toddmotto.com/angular-pipes-custom-pipes "Step by Step Custom Pipes in Angular"
+[6]: https://semaphoreci.com/community/tutorials/testing-components-in-angular-2-with-jasmine "Testing Components in Angular 2 with Jasmine"
+[7]: https://angular.io/cli/test "Unit Tests with CLI"
+[8]: https://codecraft.tv/courses/angular/unit-testing/angular-test-bed/ "Angular Test Bed"  
+[9]: https://webpack.js.org/concepts "webpack concepts"  
