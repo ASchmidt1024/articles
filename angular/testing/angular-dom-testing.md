@@ -47,7 +47,7 @@ So we change the directory to our project folder and install the library for dev
         });
     });
 
-This test is based on the Angular testing tool `TestBed`, which we want to replace.
+This test is based on the Angular core testing tools, which we want to replace.
 
 Replace 
 
