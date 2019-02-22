@@ -6,6 +6,8 @@ Why Unit Test? Guess you have created a new Angular app and want to know if your
 
 Unit Tests allow us to guard against breaking changes. Once written we can use them to run as often as we needed. When we update our app and a test fails, we know exactly where in our app is the failure. We can also analyze code behavior for expected and unexpected results and we can reveal design mistakes. Maybe when we writing our test we come to a mistake in design of our app. Tests can help us.
 
+## Introduction
+
 For this lecture we create a brand new Angular app with the command line interface (CLI) of Angular. Run the CLI command `ng new` and provide some name like `testing-app`, as shown here:
 
 ```console
