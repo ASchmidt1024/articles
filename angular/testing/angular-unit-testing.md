@@ -110,15 +110,15 @@ ng test
 
 A chrome browser will be opened automatically and displays the test results and the app itself.
 
-![Karma and Jasmine](img/testing-app_ng-test_success_browser.png)
+![Unit Testing in Angular](img/testing-app_ng-test_success_browser.png)
 
 Well. This looks good. Now change something, for example the title in the file `app.component.ts` and see, how the tests goes when something is going wrong.
 
-![Karma and Jasmine](img/testing-app_ng-test_failure_browser.png)
+![Testing with errors](img/testing-app_ng-test_failure_browser.png)
 
 Even in the terminal you see the debug information.
 
-![Karma and Jasmine](img/testing-app_ng-test_failure_console.png)
+![Debugging in the console](img/testing-app_ng-test_failure_console.png)
 
 The error messages gives you some helpful information to fix the bug. In our case the unexpected title gives us two errors. The second and third test of our `app.component.spec.ts` fail. The title isn't `testing-app` anymore. Fixing the title and rerun the test gives us certainty about the flaw of our app.
 
