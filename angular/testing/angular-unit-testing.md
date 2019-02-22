@@ -8,7 +8,9 @@ Unit Tests allow us to guard against breaking changes. Once written we can use t
 
 For this lecture we create a brand new Angular app with the command line interface (CLI) of Angular. Run the CLI command `ng new` and provide some name like `testing-app`, as shown here:
 
-    ng new testing-app
+```console
+ng new testing-app
+```
 
 Your new app comes with some Unit Tests included. Take a look at the source files you will see the test file called `app.component.spec.ts`. The suffix `...spec.ts` is reserved for the test files and will come with every new component you create through console. Open in the editor it should look like that.
 
@@ -102,7 +104,9 @@ Finally we check `should render title in a h1 tag`. We create the component agai
 
 Now, to see [Karma][1] and [Jasmine][2] in Action just open a terminal again and run the tests.
 
-    ng test
+```console
+ng test
+```
 
 A chrome browser will be opened automatically and displays the test results and the app itself.
 
@@ -124,7 +128,9 @@ The error messages gives you some helpful information to fix the bug. In our cas
 
 Let's dive a little bit deeper into testing. Just create a new component, for example a user component, in the console.
 
-    ng g c user
+```console
+ng g c user
+```
 
 We know `g` stands for 'generate' and `c` for 'component'. Our template in `user.component.html` in the folder `app/user` should contain something like this.
 ```html
