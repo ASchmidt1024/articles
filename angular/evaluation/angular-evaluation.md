@@ -6,13 +6,13 @@ To save you some time, let me some up something for you: Angular is still as goo
 
 ## Where to start?
 
-The killer argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hyprid apps. One codebase, any platform. So if it comes to this framework (Ionic) Angular is the only choice.
+The killer argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hyprid apps. One codebase, any platform, e.g. for iOS and Android. So if it comes to this framework (Ionic) Angular is the only choice.
 
-Furthermore Angular is a mature framework and should be taken for big projects. If you have complex business logic, Angular is your choice. If you have complex routing or form validation, Angular is your choice. If you wanna write closed applications with one codebase, Angular is you choice.
+Furthermore Angular is a mature framework and should be taken for big projects. If you have complex business logic, Angular is your choice. If you have complex routing or form validation, Angular is your choice. If you wanna write closed or stand alone applications with one codebase, Angular is you choice.
 
 ## Developer
 
-Two important questions for every tool you use are how mature is it and who is behind it. Angular come from a good family: [Google][0]. Igor Minar, one of the main developer, said that Angular is used in [more than 600 hundred applications in Google][15] such as Firebase Console, Google Analytics, Google Express, Google Cloud Platform and more. Since it is started in the year 2010 more than 400 developers and a big community put their efforts in it.
+Two important questions for every tool you use are how mature is it and who is behind it. Angular come from a good family: [Google][0]. Igor Minar, one of the main developer, said that Angular is used in [more than 600 hundred applications in Google][15] such as Firebase Console, Google Analytics, Google Express, Google Cloud Platform and more. Since it is started in the year 2010 more than 400 developers and a big community put their efforts in it. So it is really developed and ready for professional projects and services.
 
 ## Features
 
@@ -22,7 +22,7 @@ Angular has more features out of the box than React. This can be a good thing, t
 
 (Source: [React VS Angular][16])
 
-As I mentioned it before I do not want to get into technical depth, but if you're interested in it, here are some buzzwords Angular comes with: Dependency injection, templates, routing, ajax requests, form building, CSS encapsulation, XSS protection, some utilities for unit testing and [RxJS][19]. Well, very technically. But the following two interesting things are worth to know it: [TypeScript][11] and [Angular Elements][20].
+As I mentioned it before I do not want to get into technical depth, but if you're interested in it, here are some buzzwords Angular comes with: Dependency injection, templates, routing, ajax requests, form building, CSS encapsulation, XSS protection, some utilities for unit testing and [RxJS][19]. Well, very technically. But the following two interesting things are worth to take a closer look at: [TypeScript][11] and [Angular Elements][20].
 
 ### TypeScript
 
@@ -44,13 +44,15 @@ As I mentioned it before I do not want to get into technical depth, but if you'r
 
 (todo)
 
+## Framework VS Library  
+
+Angular is a framework, React a library. But what's the difference between both? Short, frameworks tell you how you should structure your project, whereas libraries are building blocks that you can use anywhere in your code, in your excisting application. In other words: Frameworks call you how to code your application and within your code you call libraries to do things. Frameworks contain libraries. Libraries can easily be integrated into any existing application, e.g. by adding a `<script>` tag. With a framework the application self needs to be part of it. The framework parse it and generate the code the developer otherwise would have had to write himselves. With this in mind, if your project is a new application or a complex component of an existing one, Angular will be the right tool.
+
+A normal development starts typically with a framework and fill out functions defined in additional libraries throught an API. Both of them, libraries and frameworks, define API, which is used for developer to use.
+
 ## Human Resources
 
-Another important question to ask before choosing Angular for the upcoming project is which developers are at your disposal. "It's standing and it's falling with people." used to say my grandma. And so if there are some high skilled Angular developers there to realize this project, just choose it. But keep in mind if there are only one or two developers on board, the project might depends on these guys. Good developers are rare these times.
- 
-## Library VS Framework  
-
-(todo)
+Another important question to ask before choosing Angular - or general any library, tool or framework - is which developers are at your disposal. "It's standing and it's falling with the people." used to say my grandma. And so if there are some high skilled Angular developers there to realize this project, just choose it. But keep in mind if there are only one or two developer on board, the project might depends on these guys, if you don't have access to others. Good developers are rare these times.
 
 ## Conclusion
 
@@ -83,7 +85,8 @@ Another important question to ask before choosing Angular for the upcoming proje
 [Angular Elements as a service][22] Video, 23 min  
 [Angula CLI][24] Official Reference  
 [Angular Console][23] UI for Angular CLI   
-
+[Libraries VS Frameworks][25]  
+[Library vs. Framework?][26]  
 
   
 [0]: https://www.google.com "Google, Official Website"  
@@ -111,3 +114,5 @@ Another important question to ask before choosing Angular for the upcoming proje
 [22]: https://www.youtube.com/watch?v=Z1gLFPLVJjY "Angular Elements as a service"  
 [23]: https://angularconsole.com "Angular Console, UI for Angular CLI"  
 [24]: https://angular.io/cli "Angula CLI Reference"  
+[25]: https://medium.com/datafire-io/libraries-vs-frameworks-626cdde799a7 "Libraries VS Frameworks"  
+[26]: https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/ "Library vs. Framework"  
