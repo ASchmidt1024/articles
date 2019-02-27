@@ -22,7 +22,7 @@ Angular has more features out of the box than React. This can be a good thing, t
 
 (Source: [React VS Angular][16])
 
-As I mentioned it before I do not want to get into technical depth, but if you're interested in it, here are some buzzwords Angular comes with: Dependency injection, templates, routing, ajax requests, form building, CSS encapsulation, XSS protection, some utilities for unit testing and [RxJS][19]. Well, very technically. But the following two interesting things are worth to know it: TypeScript and Angular Elements.
+As I mentioned it before I do not want to get into technical depth, but if you're interested in it, here are some buzzwords Angular comes with: Dependency injection, templates, routing, ajax requests, form building, CSS encapsulation, XSS protection, some utilities for unit testing and [RxJS][19]. Well, very technically. But the following two interesting things are worth to know it: [TypeScript][11] and [Angular Elements][20].
 
 ### TypeScript
 
@@ -34,7 +34,7 @@ As I mentioned it before I do not want to get into technical depth, but if you'r
 
 ## Angular CLI
 
-(todo)
+[Angular command line interface][24] provides some very helpful commands to build up and running full stack applications in minutes. The developers has no need to figure out stuff like sourve maps, webpack or test runners. This all work out of the box. Angular CLI helps your developer to enforce consistent developement practices by generating component, services and state management modules. You can use the tool directly in the console. There is also an UI named [Angular Console][23], which is available as desktop app.
 
 ## Ionic Framework
 
@@ -81,6 +81,8 @@ Another important question to ask before choosing Angular for the upcoming proje
 [Angular Elements Overview][20]  
 [Polyfills][21]  
 [Angular Elements as a service][22] Video, 23 min  
+[Angula CLI][24] Official Reference  
+[Angular Console][23] UI for Angular CLI   
 
 
   
@@ -106,4 +108,6 @@ Another important question to ask before choosing Angular for the upcoming proje
 [19]: http://reactivex.io/rxjs/manual/overview.html "RxJS Documentation"  
 [20]: https://angular.io/guide/elements "Angular Elements Overview"  
 [21]: https://www.webcomponents.org/polyfills "Polyfills"  
-[22]: https://www.youtube.com/watch?v=Z1gLFPLVJjY "Angular Elements as a service"
+[22]: https://www.youtube.com/watch?v=Z1gLFPLVJjY "Angular Elements as a service"  
+[23]: https://angularconsole.com "Angular Console, UI for Angular CLI"  
+[24]: https://angular.io/cli "Angula CLI Reference"  
