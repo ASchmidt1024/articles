@@ -6,7 +6,7 @@ To save you some time, let me some up something for you: Angular is still as goo
 
 ## Where to start?
 
-The killer argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hyprid apps. One codebase, any platform, e.g. for iOS and Android. So if it comes to this framework (Ionic) Angular is the only choice.
+The killer argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hyprid apps. One codebase, any platform, e.g. for iOS and Android or progressive web apps. So if it comes to this framework (Ionic) Angular is the only choice.
 
 Furthermore Angular is a mature framework and should be taken for big projects. If you have complex business logic, Angular is your choice. If you have complex routing or form validation, Angular is your choice. If you wanna write closed or stand alone applications with one codebase, Angular is you choice.
 
@@ -38,11 +38,11 @@ As I mentioned it before I do not want to get into technical depth, but if you'r
 
 ## Ionic Framework
 
-(todo)
+[Ionic][14] is a very popular framework to build hybrid mobile apps. It comes with [Cordova][27], which is integrated with Angular and the Material library. With Ionic you can easy build mobile application for iOS and Android with only one codebase. 
 
 ## Angular Material
 
-(todo)
+[Angular Material][28] offers you many design components for Angular with modern UI that work across the web, mobile and desktop. Which it you can build fast and consistent interfaces for common interaction patterns like form controls, navigation, layout, grid, buttons etc. This helps developers to build prototypes in a fast way. 
 
 ## Framework VS Library  
 
@@ -76,6 +76,7 @@ Another important question to ask before choosing Angular - or general any libra
 [TypeScript][11] Official Website  
 [TypeScript][12] on GitHub  
 [Ionic][14] Official Website  
+[Cordova][27] Official Website  
 [Keynote AngularConnect 2018][15] by Igor Minar  
 [React VS Angular][16]  
 [Igor Minar on GitHub][17]  
@@ -85,6 +86,7 @@ Another important question to ask before choosing Angular - or general any libra
 [Angular Elements as a service][22] Video, 23 min  
 [Angula CLI][24] Official Reference  
 [Angular Console][23] UI for Angular CLI   
+[Angular Material][28] Material Design components for Angular  
 [Libraries VS Frameworks][25]  
 [Library vs. Framework?][26]  
 
@@ -103,7 +105,7 @@ Another important question to ask before choosing Angular - or general any libra
 [11]: https://www.typescriptlang.org "TypeScript, Official Website"  
 [12]: https://github.com/Microsoft/TypeScript "TypeScript on GitHub"  
 [13]: https://www.microsoft.com "Microsoft, Official Website"  
-[14]: https://ionicframework.com "Ionic, Official Website"  
+[14]: https://ionicframework.com/framework "Ionic, Official Website"  
 [15]: https://www.youtube.com/watch?v=rbFLorQWlOQ&feature=youtu.be&t=358 "Keynote AngularConnect 2018 by Igor Minar"  
 [16]: https://www.sitepoint.com/react-vs-angular "React VS Angular"  
 [17]: https://github.com/IgorMinar "Igor Minar on GitHub"  
@@ -116,3 +118,7 @@ Another important question to ask before choosing Angular - or general any libra
 [24]: https://angular.io/cli "Angula CLI Reference"  
 [25]: https://medium.com/datafire-io/libraries-vs-frameworks-626cdde799a7 "Libraries VS Frameworks"  
 [26]: https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/ "Library vs. Framework"  
+[27]: https://cordova.apache.org "Cordova, Official Website"  
+[28]: https://material.angular.io "Angular Material, Material Design components for Angular"  
+
+ 
