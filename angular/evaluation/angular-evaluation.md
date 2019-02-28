@@ -1,8 +1,8 @@
 # Angular Evaluation
 
-Why should you take [Angular][1] for your next project? To determine your choice you evaluate some aspects of this popular javascript framework. The goal of this article is to show how you can evaluate the use of Angular. We don't look at [React][5] and [Vue.js][6], the two other main players in this section. You will be given the right arguments for Angular to make sense to take this framework and the way it is used, without getting into technical deep details.
+Why take [Angular][1] for the next project? To determine your choice you should evaluate some aspects of this popular javascript framework. The goal of this article is to show how you can evaluate the use of Angular, to give you the right arguments, without getting into technical deep details.
 
-To save you some time, let me some up something for you: Angular is still as good as React or as Vue.js, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
+We don't look at [React][5] or [Vue.js][6], the two other main players in this section. Instead of a comparsion between the tools, we take a look at the differences between frameworks and libraries in general. And to save you some time, let me some up something for you: Angular is still as good as React or as Vue.js, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
 
 ## Where to start?
 
