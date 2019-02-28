@@ -63,18 +63,13 @@ It depends on the clients enviroment wether Angular should be chosen. You have t
 ## Sources
 
 [Angular][1] Official Website  
-[AngularJS][2] Official Website  
-[Angular][3] on GitHub  
-[AngularJS][4] on GitHub  
+[Angular][3] on GitHub   
 [React][5]  
 [Vue.js][6]  
 [The MIT License][7]  
-[MIT License][8] (Wikipedia)  
-[MIT variants][9]  
 [JavaScript][10] Mozilla  
 [Microsoft][17] Official Website  
 [TypeScript][11] Official Website  
-[TypeScript][12] on GitHub  
 [Ionic][14] Official Website  
 [Cordova][27] Official Website  
 [Keynote AngularConnect 2018][15] by Igor Minar  
