@@ -2,13 +2,13 @@
 
 Why take [Angular][1] for the next project? To determine your choice you should evaluate some aspects of this popular javascript framework. The goal of this article is to show how you can evaluate the use of Angular to give you the right arguments, without getting into technical deep details.
 
-We don't look at [React][5] or [Vue.js][6], the two other main players in this section. Instead of a comparsion between the tools, we take a look at the differences between frameworks and libraries in general. And to save you some time, let me some up something for you: Angular is still as good as React or as Vue.js, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
+We don't look at [React][5] or [Vue.js][6], the two other main players in this section. Instead of a comparison between the tools, we take a look at the differences between frameworks and libraries in general. And to save you some time, let me sum up something for you: Angular is still as good as React or as Vue.js, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
 
 ## Where to start?
 
-The killer argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hyprid apps. One codebase, any platform, e.g. for iOS and Android or progressive web apps. So if it comes to this framework (Ionic) Angular is the only choice.
+The killer argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hybrid apps. One codebase, any platform, e.g. for iOS and Android or progressive web apps. So if it comes to this framework (Ionic) Angular is the only choice.
 
-Furthermore Angular is a mature framework and should be taken for big projects. If you have complex business logic, Angular is your choice. If you have complex routing or form validation, Angular is your choice. If you wanna write closed or stand alone applications with one codebase, Angular is you choice.
+Furthermore Angular is a mature framework and should be taken for big projects. If you have complex business logic, Angular is your choice. If you have complex routing or form validation, Angular is your choice. If you wanna write closed or stand alone applications with one codebase, Angular is your choice.
 
 ## Developer
 
@@ -34,7 +34,7 @@ As mentioned it before we do not want to get into technical depth, but if you're
 
 ## Angular CLI
 
-[Angular command line interface][24] provides some very helpful commands to build up and running full stack applications in minutes. The developer has no need to figure out stuff like sourve maps, webpack or test runners. This all work out of the box. Angular CLI helps your developer to enforce consistent developement practices by generating component, services and state management modules. You can use the tool directly in the console. There is also an UI named [Angular Console][23], which is available as desktop app.
+[Angular command line interface][24] provides some very helpful commands to build up and running full stack applications in minutes. The developer has no need to figure out stuff like source maps, webpack or test runners. This all work out of the box. Angular CLI helps your developer to enforce consistent development practices by generating component, services and state management modules. You can use the tool directly in the console. There is also an UI named [Angular Console][23], which is available as desktop app.
 
 ## Ionic Framework
 
@@ -46,7 +46,7 @@ As mentioned it before we do not want to get into technical depth, but if you're
 
 ## Framework VS Library  
 
-Angular is a framework, React is a library. But what's the difference between both? Short, frameworks tell you how you should structure your project, whereas libraries are building blocks that you can use anywhere in your code, in your excisting application. In other words: Frameworks call you how to code your application and within your code you call libraries to do things. Frameworks contain libraries. Libraries can easily be integrated into any existing application, e.g. by adding a `<script>` tag. With a framework the application self needs to be part of it. The framework parse it and generate the code the developer otherwise would have had to write himselves. With this in mind, if your project is a new application or a complex component of an existing one, Angular will be the right tool.
+Angular is a framework, React is a library. But what's the difference between both? Short, frameworks tell you how you should structure your project, whereas libraries are building blocks that you can use anywhere in your code, in your excisting application. In other words: Frameworks call you how to code your application and within your code you call libraries to do things. Frameworks contain libraries. Libraries can easily be integrated into any existing application, e.g. by adding a `<script>` tag. With a framework the application self needs to be part of it. The framework parse it and generate the code the developers otherwise would have had to write themselves. With this in mind, if your project is a new application or a complex component of an existing one, Angular will be the right tool.
 
 A normal development starts typically with a framework and fill out functions defined in additional libraries throught an API. Both of them, libraries and frameworks, define API, which is used for developer to use.
 
@@ -56,7 +56,7 @@ Another important question to ask before choosing Angular - or general any libra
 
 ## Conclusion
 
-It depends on the clients enviroment wether Angular should be chosen. You have to ask the right questions. Do you need Ionic for mobile applications or progressive web apps? Do you have a complex business logic in your project or a stand alone application? Do some Angular apps in the project already exist? Are there developers available who know Angular or TypeScript or a similar programming language? If one or more questions can be answered with yes, then Angular is a really good choice you can take. 
+It depends on the clients environment wether Angular should be chosen. You have to ask the right questions. Do you need Ionic for mobile applications or progressive web apps? Do you have a complex business logic in your project or a stand alone application? Do some Angular apps in the project already exist? Are there developers available who know Angular or TypeScript or a similar programming language? If one or more questions can be answered with yes, then Angular is a really good choice you can take. 
 
 ---
 
@@ -79,7 +79,7 @@ It depends on the clients enviroment wether Angular should be chosen. You have t
 [Angular Elements Overview][20]  
 [Polyfills][21]  
 [Angular Elements as a service][22] Video, 23 min  
-[Angula CLI][24] Official Reference  
+[Angular CLI][24] Official Reference  
 [Angular Console][23] UI for Angular CLI   
 [Angular Material][28] Material Design components for Angular  
 [Libraries VS Frameworks][25]  
