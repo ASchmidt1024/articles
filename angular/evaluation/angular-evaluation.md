@@ -72,6 +72,11 @@ Angular is a mature framework. This is seen in the trends of the last five years
 ![Google Trends, Germany, last 12 month][33]
 (Source: [Google Trends, Germany, last 12 month][35])
 
+In 2018 over 20.000 developer were asked which frontend framework they use or head of. A look at the results shows Angular on place three after React and Vue.
+
+![stateofjs.com - 2018, Overall Front-end Frameworks results][37]
+(Source: [stateofjs.com - 2018, Overall Front-end Frameworks results][36])
+
 ## Conclusion
 
 It depends on the clients environment wether Angular should be chosen. You have to ask the right questions. Do you need Ionic for mobile applications or progressive web apps? Do you have a complex business logic in your project or a stand alone application? Do some Angular apps in the project already exist? Are there developers available who know Angular or TypeScript or a similar programming language? If one or more questions can be answered with yes, then Angular is a really good choice you can take. 
@@ -109,6 +114,8 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [Ionic Introduction][31]  
 [Google Trends, Worldwide, 5 years, React VS Angular][34]  
 [Google Trends, Germany, 12 months, React VS Angular][35]  
+[State of JavaScript, Front-end Frameworks 2018][36]  
+
 
   
 [0]: https://www.google.com "Google, Official Website"  
@@ -146,4 +153,6 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [32]: img/google-trends_weltweit_5jahre_react-angular.png "Google Trends, Worldwide, 5 years, React VS Angular"  
 [33]: img/google-trends_deutschland_12monate_react-angular.png "Google Trends, Germany, 12 months, React VS Angular"  
 [34]: https://trends.google.de/trends/explore?date=today%205-y&q=React,Angular "Google Trends, Worldwide, 5 years, React VS Angular"  
-[35]: https://trends.google.de/trends/explore?geo=DE&q=React,Angular "Google Trends, Germany, 12 months, React VS Angular" 
+[35]: https://trends.google.de/trends/explore?geo=DE&q=React,Angular "Google Trends, Germany, 12 months, React VS Angular"  
+[36]: https://2018.stateofjs.com/front-end-frameworks/overview/ "State of JavaScript, Front-end Frameworks 2018"  
+[37]: img/stateofjs.com_2018_frontend-frameworks.png "stateofjs.com - 2018, Overall Front-end Frameworks results"  
