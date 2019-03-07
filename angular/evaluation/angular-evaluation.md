@@ -72,10 +72,21 @@ Angular is a mature framework. This is seen in the trends of the last five years
 ![Google Trends, Germany, last 12 month][33]
 (Source: [Google Trends, Germany, last 12 month][35])
 
-In 2018 over 20.000 developer were asked which frontend framework they use or head of. A look at the results shows Angular on place three after React and Vue.
+In 2018 over 20.000 developer were asked which frontend framework they use or had heard of. A look at the results shows Angular on place three after React and Vue.
 
 ![stateofjs.com - 2018, Overall Front-end Frameworks results][37]
 (Source: [stateofjs.com - 2018, Overall Front-end Frameworks results][36])
+
+## Facts
+
+|   | Angular  | React  |
+|---|---|---|
+| Version  | <img src="https://badge.fury.io/js/%40angular%2Fcore.svg" alt="npm version" height="18"> | <img src="https://badge.fury.io/js/react.svg" alt="npm version" height="18"> |
+| GitHub Stars  | ![GitHub Stars Angular][41]  | ![GitHub Stars React][42]  |
+| [Downloads, 2018 (npm)][38]  | 16.609.604  | 128.146.570  |
+| Developer  | Google  | Facebook  |
+| Release Year | 2010  | 2013  |
+| Licence  | [MIT][7]  | [MIT][7]  |
 
 ## Conclusion
 
@@ -115,6 +126,9 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [Google Trends, Worldwide, 5 years, React VS Angular][34]  
 [Google Trends, Germany, 12 months, React VS Angular][35]  
 [State of JavaScript, Front-end Frameworks 2018][36]  
+[Download statistics for React and Angular][38]  
+[Angular - bestofjs.org][39]  
+[Rect - bestofjs.org][40]   
 
 
   
@@ -156,3 +170,8 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [35]: https://trends.google.de/trends/explore?geo=DE&q=React,Angular "Google Trends, Germany, 12 months, React VS Angular"  
 [36]: https://2018.stateofjs.com/front-end-frameworks/overview/ "State of JavaScript, Front-end Frameworks 2018"  
 [37]: img/stateofjs.com_2018_frontend-frameworks.png "stateofjs.com - 2018, Overall Front-end Frameworks results"  
+[38]: https://npm-stat.com/charts.html?package=react&package=angular&from=2018-01-01&to=2018-12-31 "Download statistics for React and Angular"  
+[39]: https://bestofjs.org/projects/angular "Angular - bestofjs.org"  
+[40]: https://bestofjs.org/projects/react "React - bestofjs.org"  
+[41]: https://img.shields.io/github/stars/angular/angular.svg?label=Star "GitHub Stars Angular"  
+[42]: https://img.shields.io/github/stars/facebook/react.svg?label=Star "GitHub Stars React"  
