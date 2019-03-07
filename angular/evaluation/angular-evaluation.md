@@ -2,11 +2,11 @@
 
 Why take [Angular][1] for the next project? To determine your choice you should evaluate some aspects of this popular javascript framework. The goal of this article is to show how you can evaluate the use of Angular to give you the right arguments, without getting into technical deep details.
 
-We don't look at [React][5] or [Vue.js][6], the two other main players in this section. Instead of a comparison between the tools, we take a look at the differences between frameworks and libraries in general. And to save you some time, let me sum up something for you: Angular is still as good as React or as Vue.js, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
+We don't look at [React][5] or [Vue][6], the two other main players in this section. Instead of a comparison between the tools (e.g. [Angular or React][29]), we take a look at the differences between frameworks and libraries in general. And to save you some time, let me sum up something for you: Angular is still as good as React or as Vue, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
 
 ## Where to start?
 
-The killer argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hybrid apps. One codebase, any platform, e.g. for iOS and Android or progressive web apps. So if it comes to this framework (Ionic) Angular is the only choice.
+The main argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hybrid apps. One codebase, any platform, e.g. for iOS and Android or progressive web apps. Past releases of Ionic were tightly coupled to Angular. Version 4 of the framework was re-engineered to work as a standalone Web Component library. So if it comes to this framework (Ionic) Angular, because of his history, is currently the best choice.
 
 Furthermore Angular is a mature framework and should be taken for big projects. If you have complex business logic, Angular is your choice. If you have complex routing or form validation, Angular is your choice. If you wanna write closed or stand alone applications with one codebase, Angular is your choice.
 
@@ -38,7 +38,7 @@ As mentioned it before we do not want to get into technical depth, but if you're
 
 ## Ionic Framework
 
-[Ionic][14] is a very popular framework to build hybrid mobile apps. It comes with [Cordova][27], which is integrated with Angular and the Material library. With Ionic you can easy build mobile application for iOS and Android with only one codebase. 
+[Ionic][14] is a very popular framework to build hybrid mobile apps. It comes with [Cordova][27] and integrations for the latest JavaScript frameworks like Angular. Angular was tightly coupled with Ionic in the past. With Ionic you can easy build mobile application for iOS and Android with only one codebase. 
 
 ## Angular Material
 
@@ -65,7 +65,8 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [Angular][1] Official Website  
 [Angular][3] on GitHub   
 [React][5]  
-[Vue.js][6]  
+[Vue][6]  
+[Angular or React, how to choose][29]  
 [The MIT License][7]  
 [JavaScript][10] Mozilla  
 [Microsoft][17] Official Website  
@@ -92,7 +93,7 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [3]: https://github.com/angular/angular "Angular on GitHub"  
 [4]: https://github.com/angular/angular.js "AngularJS on GitHub"  
 [5]: https://reactjs.org "React"  
-[6]: https://vuejs.org "Vue.js"  
+[6]: https://vuejs.org "Vue"  
 [7]: https://opensource.org/licenses/MIT "The MIT License"  
 [8]: https://en.wikipedia.org/wiki/MIT_License "MIT License (Wikipedia)"  
 [9]: https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT "MIT variants"  
@@ -115,5 +116,5 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [26]: https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/ "Library vs. Framework"  
 [27]: https://cordova.apache.org "Cordova, Official Website"  
 [28]: https://material.angular.io "Angular Material, Material Design components for Angular"  
-
+[29]: https://inside.namics.com/display/TAFrontend/Angular+or+React%2C+how+to+choose "Angular or React, how to choose"
  
