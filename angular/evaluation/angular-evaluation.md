@@ -2,7 +2,7 @@
 
 Why take [Angular][1] for the next project? To determine your choice you should evaluate some aspects of this popular javascript framework. The goal of this article is to show how you can evaluate the use of Angular to give you the right arguments, without getting into technical deep details.
 
-We don't look at [React][5] or [Vue][6], the two other main players in this section. Instead of a comparison between the tools (e.g. [Angular or React][29]), we take a look at the differences between frameworks and libraries in general. And to save you some time, let me sum up something for you: Angular is still as good as React or as Vue, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
+[React][5] and [Vue][6] are the two other main players in this section. Before a comparison between the tools (e.g. [Angular or React][29]), we take a look at the differences between frameworks and libraries in general. And to save you some time, let me sum up something for you: Angular is still as good as React or as Vue, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
 
 ## Where to start?
 
@@ -38,7 +38,11 @@ As mentioned it before we do not want to get into technical depth, but if you're
 
 ## Ionic Framework
 
-[Ionic][14] is a very popular framework to build hybrid mobile apps. It comes with [Cordova][27] and integrations for the latest JavaScript frameworks like Angular. Angular was tightly coupled with Ionic in the past. With Ionic you can easy build mobile application for iOS and Android with only one codebase. 
+[Ionic][14] is a very popular framework to build hybrid mobile apps. It comes with [Cordova][27] and integrations for the latest JavaScript frameworks like Angular. Angular was tightly coupled with Ionic in the past. With Ionic you can easy build mobile application for iOS and Android with only one codebase.
+
+> Angular has always been at the center of what makes Ionic great. While the core components have been written to work as a standalone Web Component library, the @ionic/angular package makes integration with the Angular ecosystem a breeze. @ionic/angular includes all the functionality that Angular developers would expect coming from Ionic 2/3, and integrates with core Angular libraries, like the Angular router.
+
+(Source: [Ionic Introduction][31])
 
 ## Angular Material
 
@@ -50,9 +54,23 @@ Angular is a framework, React is a library. But what's the difference between bo
 
 A normal development starts typically with a framework and fill out functions defined in additional libraries throught an API. Both of them, libraries and frameworks, define API, which is used for developer to use.
 
+## Long Term Support
+
+[AngularJS][2], the first version of Angular, is still a supported framework. The release of version 2 in the year 2016 came with such a huge refactoring, that we can speak of two stand alone frameworks. On 1. July 2018 AngularJS entered a [3 year Long Term Support][30] period.
+
 ## Human Resources
 
 Another important question to ask before choosing Angular - or general any library, tool or framework - is which developers are at your disposal. "It's standing and it's falling with the people." used to say my grandma. And so if there are some high skilled Angular developers available to realize the project, just choose it. But keep in mind if there are only one or two developer on board, the project might depends on these guys, if you don't have access to others. Good developers are rare these times.
+
+## Trends 
+
+Angular is a mature framework. This is seen in the trends of the last five years world wide and in the last 12 months in Germany. The values give the search interest relative to the highest point in the chart. The value 100 stands for the highest popular of this search term. The value of 50 means that the term is half popular and the value 0 means that there is not enough data to provide for. 
+
+![Google Trends, World, last 5 years][32]
+(Source: [Google Trends, World, last 5 years][34])
+
+![Google Trends, Germany, last 12 month][33]
+(Source: [Google Trends, Germany, last 12 month][35])
 
 ## Conclusion
 
@@ -64,6 +82,8 @@ It depends on the clients environment wether Angular should be chosen. You have 
 
 [Angular][1] Official Website  
 [Angular][3] on GitHub   
+[AngularJS][2] Official Website  
+[AngularJS][4] on GitHub   
 [React][5]  
 [Vue][6]  
 [Angular or React, how to choose][29]  
@@ -85,6 +105,10 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [Angular Material][28] Material Design components for Angular  
 [Libraries VS Frameworks][25]  
 [Library vs. Framework?][26]  
+[AngularJS Long Term Support][30]  
+[Ionic Introduction][31]  
+[Google Trends, Worldwide, 5 years, React VS Angular][34]  
+[Google Trends, Germany, 12 months, React VS Angular][35]  
 
   
 [0]: https://www.google.com "Google, Official Website"  
@@ -116,5 +140,10 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [26]: https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/ "Library vs. Framework"  
 [27]: https://cordova.apache.org "Cordova, Official Website"  
 [28]: https://material.angular.io "Angular Material, Material Design components for Angular"  
-[29]: https://inside.namics.com/display/TAFrontend/Angular+or+React%2C+how+to+choose "Angular or React, how to choose"
- 
+[29]: https://inside.namics.com/display/TAFrontend/Angular+or+React%2C+how+to+choose "Angular or React, how to choose"  
+[30]: https://docs.angularjs.org/misc/version-support-status "AngularJS Long Term Support"  
+[31]: https://ionicframework.com/docs/intro "Ionic Introduction"  
+[32]: img/google-trends_weltweit_5jahre_react-angular.png "Google Trends, Worldwide, 5 years, React VS Angular"  
+[33]: img/google-trends_deutschland_12monate_react-angular.png "Google Trends, Germany, 12 months, React VS Angular"  
+[34]: https://trends.google.de/trends/explore?date=today%205-y&q=React,Angular "Google Trends, Worldwide, 5 years, React VS Angular"  
+[35]: https://trends.google.de/trends/explore?geo=DE&q=React,Angular "Google Trends, Germany, 12 months, React VS Angular" 
