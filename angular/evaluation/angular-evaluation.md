@@ -72,6 +72,10 @@ Angular is a mature framework. This is seen in the trends of the last five years
 ![Google Trends, Germany, last 12 month][33]
 (Source: [Google Trends, Germany, last 12 month][35])
 
+> (?) Interest over time
+>
+> Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.
+
 In 2018 over 20.000 developer were asked which frontend framework they use or had heard of. A look at the results shows Angular on place three after React and Vue.
 
 ![stateofjs.com - 2018, Overall Front-end Frameworks results][37]
@@ -80,17 +84,45 @@ In 2018 over 20.000 developer were asked which frontend framework they use or ha
 ## Facts
 
 |   | Angular  | React  |
-|---|---|---|
+|---:|:---:|:---:|
 | Version  | <img src="https://badge.fury.io/js/%40angular%2Fcore.svg" alt="npm version" height="18"> | <img src="https://badge.fury.io/js/react.svg" alt="npm version" height="18"> |
 | GitHub Stars  | ![GitHub Stars Angular][41]  | ![GitHub Stars React][42]  |
-| [Downloads, 2018 (npm)][38]  | 16.609.604  | 128.146.570  |
+| [Downloads<br><small>2018 (npm)</small>][38]  | 16.609.604  | 128.146.570  |
 | Developer  | Google  | Facebook  |
 | Release Year | 2010  | 2013  |
 | Licence  | [MIT][7]  | [MIT][7]  |
+| Open job positions<br><small>(Germany, start 2019)</small> |
+| XING  | [5.180][45]  | [3.260][46]  |
+| LinkedIn  | [8.765][47]  | [5.827][48]  |
+| Monster  | [286][49]  | [180][50]  |
+
+Have a look at the [framework matrix with a closer comparison][29] (bottom of the page).
+
+## Reason to use
+
+- Great support for [Ionic][14]
+- Many high skilled developers
+- Full-featured and powerful
+- Good documentation
+- Powerful developer tooling
+
+## Reason not to use
+
+- To heavy for little projects
+- No good integration in existing projects
+- Lightweight alternatives like [React][5], [Vue][6] or [Ember][43]
+- [One third of developers would not use it again][36] (probably of AngularJS; see [Conclusion](#Conclusion))
+- Failed projects
 
 ## Conclusion
 
 It depends on the clients environment wether Angular should be chosen. You have to ask the right questions. Do you need Ionic for mobile applications or progressive web apps? Do you have a complex business logic in your project or a stand alone application? Do some Angular apps in the project already exist? Are there developers available who know Angular or TypeScript or a similar programming language? If one or more questions can be answered with yes, then Angular is a really good choice you can take. 
+
+![stateofjs.com - 2018, Overall Front-end Frameworks Conclusion][51]
+
+> Many people have pointed out that Angular's poor satisfaction ratio is probably in part due to the confusion between Angular and the older, deprecated AngularJS (previous surveys avoided this issue by featuring both as separate items). So while Angular did “fall” –relatively speaking– from its dominance from a few years back, it might very well regain ground once the dust clears.
+
+(Source: [Front-end Frameworks - Conslusion, stateofjs.com][44])
 
 ---
 
@@ -128,7 +160,8 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [State of JavaScript, Front-end Frameworks 2018][36]  
 [Download statistics for React and Angular][38]  
 [Angular - bestofjs.org][39]  
-[Rect - bestofjs.org][40]   
+[React - bestofjs.org][40]   
+[Front-end Frameworks - Conslusion, stateofjs.com][44]  
 
 
   
@@ -161,13 +194,13 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [26]: https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/ "Library vs. Framework"  
 [27]: https://cordova.apache.org "Cordova, Official Website"  
 [28]: https://material.angular.io "Angular Material, Material Design components for Angular"  
-[29]: https://inside.namics.com/display/TAFrontend/Angular+or+React%2C+how+to+choose "Angular or React, how to choose"  
+[29]: https://inside.namics.com/x/IIF8Ag "Angular or React, how to choose"  
 [30]: https://docs.angularjs.org/misc/version-support-status "AngularJS Long Term Support"  
 [31]: https://ionicframework.com/docs/intro "Ionic Introduction"  
-[32]: img/google-trends_weltweit_5jahre_react-angular.png "Google Trends, Worldwide, 5 years, React VS Angular"  
-[33]: img/google-trends_deutschland_12monate_react-angular.png "Google Trends, Germany, 12 months, React VS Angular"  
-[34]: https://trends.google.de/trends/explore?date=today%205-y&q=React,Angular "Google Trends, Worldwide, 5 years, React VS Angular"  
-[35]: https://trends.google.de/trends/explore?geo=DE&q=React,Angular "Google Trends, Germany, 12 months, React VS Angular"  
+[32]: img/google-trends_worldwide_5years_react-angular.png "Google Trends, Worldwide, 5 years, React VS Angular"  
+[33]: img/google-trends_germany_12months_react-angular.png "Google Trends, Germany, 12 months, React VS Angular"  
+[34]: https://trends.google.com/trends/explore?date=today%205-y&q=React,Angular "Google Trends, Worldwide, 5 years, React VS Angular"  
+[35]: https://trends.google.com/trends/explore?geo=DE&q=React,Angular "Google Trends, Germany, 12 months, React VS Angular"  
 [36]: https://2018.stateofjs.com/front-end-frameworks/overview/ "State of JavaScript, Front-end Frameworks 2018"  
 [37]: img/stateofjs.com_2018_frontend-frameworks.png "stateofjs.com - 2018, Overall Front-end Frameworks results"  
 [38]: https://npm-stat.com/charts.html?package=react&package=angular&from=2018-01-01&to=2018-12-31 "Download statistics for React and Angular"  
@@ -175,3 +208,12 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [40]: https://bestofjs.org/projects/react "React - bestofjs.org"  
 [41]: https://img.shields.io/github/stars/angular/angular.svg?label=Star "GitHub Stars Angular"  
 [42]: https://img.shields.io/github/stars/facebook/react.svg?label=Star "GitHub Stars React"  
+[43]: https://www.emberjs.com/ "ember, Official Website"  
+[44]: https://2018.stateofjs.com/front-end-frameworks/conclusion/ "Front-end Frameworks - Conslusion, stateofjs.com"  
+[45]: https://www.xing.com/jobs/search?keywords=Angular&sc_o=jobs_search_button "Angular Jobs, XING"  
+[46]: https://www.xing.com/jobs/search?keywords=React&sc_o=jobs_search_button "React Jobs, XING"  
+[47]: https://www.linkedin.com/jobs/search/?keywords=Angular "Angular Jobs, LinkedIn"  
+[48]: https://www.linkedin.com/jobs/search/?keywords=React&location=Deutschland&locationId=de%3A0 "React Jobs, LinkedIn"  
+[49]: https://www.monster.de/jobs/suche/?q=Angular&cy=DE "Angular Jobs, LinkedIn"  
+[50]: https://www.monster.de/jobs/suche/?q=React&cy=DE&rad=20&intcid=swoop_HeroSearch_DE "React Jobs, Monster"  
+[51]: img/stateofjs.com_2018_frontend-frameworks-conclusion.png "stateofjs.com - 2018, Overall Front-end Frameworks Conclusion"  
