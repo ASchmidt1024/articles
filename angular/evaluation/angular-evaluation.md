@@ -14,6 +14,27 @@ Furthermore Angular is a mature framework and should be taken for big projects. 
 
 Two important questions for every tool you use are how mature is it and who is behind it. Angular come from a good family: [Google][0]. Igor Minar, one of the main developer, said that Angular is used in [more than 600 hundred applications in Google][15] such as Firebase Console, Google Analytics, Google Express, Google Cloud Platform and more. Since it is started in the year 2010 more than 400 developers and a big community put their efforts in it. So it is really developed and ready for professional projects and services.
 
+In 2018 over 20.000 developer were asked which frontend framework they use or had heard of. A look at the results shows Angular on place three after React and Vue.
+
+![stateofjs.com - 2018, Overall Front-end Frameworks results][37]
+(Source: [stateofjs.com - 2018, Overall Front-end Frameworks results][36])
+
+One third of developers would not use Angular again, probably of AngularJS (see [conclusion](#Conclusion)).
+
+## Trends 
+
+Angular is a mature framework. This is seen in the trends of the last five years world wide and in the last 12 months in Germany. The values give the search interest relative to the highest point in the chart. The value 100 stands for the highest popular of this search term. The value of 50 means that the term is half popular and the value 0 means that there is not enough data to provide for. 
+
+![Google Trends, World, last 5 years][32]
+(Source: [Google Trends, World, last 5 years][34])
+
+![Google Trends, Germany, last 12 month][33]
+(Source: [Google Trends, Germany, last 12 month][35])
+
+> (?) Interest over time
+>
+> Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.
+
 ## Features
 
 Angular has more features out of the box than React. This can be a good thing, this can be a bad thing. It depends how you look at it. 
@@ -54,6 +75,10 @@ Angular is a framework, React is a library. But what's the difference between bo
 
 A normal development starts typically with a framework and fill out functions defined in additional libraries throught an API. Both of them, libraries and frameworks, define API, which is used for developer to use.
 
+## Perfomance
+
+Angular, React and even Vue are comparatively faster than other JavaScript frameworks. You should not take performance into account to draw the [conclusion](#Conclusion) because it mainly relies on the size of the application and optimization of code.
+
 ## Long Term Support
 
 [AngularJS][2], the first version of Angular, is still a supported framework. The release of version 2 in the year 2016 came with such a huge refactoring, that we can speak of two stand alone frameworks. On 1. July 2018 AngularJS entered a [3 year Long Term Support][30] period.
@@ -61,25 +86,6 @@ A normal development starts typically with a framework and fill out functions de
 ## Human Resources
 
 Another important question to ask before choosing Angular - or general any library, tool or framework - is which developers are at your disposal. "It's standing and it's falling with the people." used to say my grandma. And so if there are some high skilled Angular developers available to realize the project, just choose it. But keep in mind if there are only one or two developer on board, the project might depends on these guys, if you don't have access to others. Good developers are rare these times.
-
-## Trends 
-
-Angular is a mature framework. This is seen in the trends of the last five years world wide and in the last 12 months in Germany. The values give the search interest relative to the highest point in the chart. The value 100 stands for the highest popular of this search term. The value of 50 means that the term is half popular and the value 0 means that there is not enough data to provide for. 
-
-![Google Trends, World, last 5 years][32]
-(Source: [Google Trends, World, last 5 years][34])
-
-![Google Trends, Germany, last 12 month][33]
-(Source: [Google Trends, Germany, last 12 month][35])
-
-> (?) Interest over time
->
-> Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.
-
-In 2018 over 20.000 developer were asked which frontend framework they use or had heard of. A look at the results shows Angular on place three after React and Vue.
-
-![stateofjs.com - 2018, Overall Front-end Frameworks results][37]
-(Source: [stateofjs.com - 2018, Overall Front-end Frameworks results][36])
 
 ## Facts
 
@@ -118,6 +124,8 @@ Have a look at the [framework matrix with a closer comparison][29] (bottom of th
 
 It depends on the clients environment wether Angular should be chosen. You have to ask the right questions. Do you need Ionic for mobile applications or progressive web apps? Do you have a complex business logic in your project or a stand alone application? Do some Angular apps in the project already exist? Are there developers available who know Angular or TypeScript or a similar programming language? If one or more questions can be answered with yes, then Angular is a really good choice you can take. 
 
+On the develpers site, the following chart shows the technology’s satisfaction ratio over its total usage (Source: [stateofjs.com][44]).
+
 ![stateofjs.com - 2018, Overall Front-end Frameworks Conclusion][51]
 
 > Many people have pointed out that Angular's poor satisfaction ratio is probably in part due to the confusion between Angular and the older, deprecated AngularJS (previous surveys avoided this issue by featuring both as separate items). So while Angular did “fall” –relatively speaking– from its dominance from a few years back, it might very well regain ground once the dust clears.
@@ -143,6 +151,7 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [Cordova][27] Official Website  
 [Keynote AngularConnect 2018][15] by Igor Minar  
 [React VS Angular][16]  
+[React vs Angular vs Vue.js: A Complete Comparison Guide][52]  
 [Igor Minar on GitHub][17]  
 [RxJS][19] Documentation  
 [Angular Elements Overview][20]  
@@ -217,3 +226,4 @@ It depends on the clients environment wether Angular should be chosen. You have 
 [49]: https://www.monster.de/jobs/suche/?q=Angular&cy=DE "Angular Jobs, LinkedIn"  
 [50]: https://www.monster.de/jobs/suche/?q=React&cy=DE&rad=20&intcid=swoop_HeroSearch_DE "React Jobs, Monster"  
 [51]: img/stateofjs.com_2018_frontend-frameworks-conclusion.png "stateofjs.com - 2018, Overall Front-end Frameworks Conclusion"  
+[52]: https://medium.com/front-end-weekly/react-vs-angular-vs-vue-js-a-complete-comparison-guide-d16faa185d61 "React vs Angular vs Vue.js: A Complete Comparison Guide"  
