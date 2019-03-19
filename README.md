@@ -1,6 +1,6 @@
 # Articles
 
-Some stuff I wrote about it.
+Some stuff I wrote about
 
 ---
 
