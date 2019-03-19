@@ -183,8 +183,8 @@ Running `ng test` in the console should give us 3 SUCCESSful tests.
 [Angular Unit Testing][0]  
 [Angular Testing Library][1]  
 [DOM Testing Library][2]  
-[Async and Await explained][3] 
-[Which query should I use?][4] 
+[Async and Await explained][3]  
+[Which query should I use?][4]  
 
 [0]: angular-unit-testing.md "Angular Unit Testing"  
 [1]: https://testing-library.com/angular "Angular Testing Library"  
