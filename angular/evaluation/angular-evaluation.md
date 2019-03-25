@@ -21,7 +21,7 @@ In 2018 over 20.000 developer were asked which frontend framework they use or ha
 
 One third of developers would not use Angular again, probably of AngularJS (see [conclusion](#Conclusion)).
 
-## Trends 
+## Trends
 
 Angular is a mature framework. This is seen in the trends of the last five years world wide and in the last 12 months in Germany. The values give the search interest relative to the highest point in the chart. The value 100 stands for the highest popular of this search term. The value of 50 means that the term is half popular and the value 0 means that there is not enough data to provide for. 
 
@@ -69,7 +69,7 @@ As mentioned it before we do not want to get into technical depth, but if you're
 
 [Angular Material][28] offers you many design components for Angular with modern UI that work across the web, mobile and desktop. Which it you can build fast and consistent interfaces for common interaction patterns like form controls, navigation, layout, grid, buttons etc. This helps developers to build prototypes in a very fast way. 
 
-## Framework VS Library  
+## Framework VS Library
 
 Angular is a framework, React is a library. But what's the difference between both? Short, frameworks tell you how you should structure your project, whereas libraries are building blocks that you can use anywhere in your code, in your excisting application. In other words: Frameworks call you how to code your application and within your code you call libraries to do things. Frameworks contain libraries. Libraries can easily be integrated into any existing application, e.g. by adding a `<script>` tag. With a framework the application self needs to be part of it. The framework parse it and generate the code the developers otherwise would have had to write themselves. With this in mind, if your project is a new application or a complex component of an existing one, Angular will be the right tool.
 
