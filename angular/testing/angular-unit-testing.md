@@ -434,6 +434,7 @@ The only thing we need to `import` is the `ReversePipe`. Therefore it is an isol
 [Basic Introduction to Unit Testing in Angular Apps (Video Tutorial)][3]  
 [Testing Components in Angular 2 with Jasmine][6]  
 [Unit Tests with CLI][7]  
+[Unit Tests (official Docs)][10]  
 [webpack Concepts][9]
 
 [1]: https://github.com/karma-runner/karma "Karma - Test Runner for JavaScript"
@@ -445,3 +446,4 @@ The only thing we need to `import` is the `ReversePipe`. Therefore it is an isol
 [7]: https://angular.io/cli/test "Unit Tests with CLI"
 [8]: https://codecraft.tv/courses/angular/unit-testing/angular-test-bed/ "Angular Test Bed"  
 [9]: https://webpack.js.org/concepts "webpack concepts"  
+[10]: https://github.com/angular/angular-cli/wiki/test "Unit Tests (official Docs) "  
