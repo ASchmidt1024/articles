@@ -119,7 +119,7 @@ it(`should have a title 'Welcome to testing-dom!'`, async () => {
 });
 ```
 
-Well we use the same structure like the test above, but instead to test our title if it equals to a given string, we test the DOM with `getByText()` and look if the string `Welcome to testing-dom!` `toBeDefined()`. `getByText()` is a query accessible to everyone and should be our top preference for non-form elmenets. For more detailed information check: [Which query should I use?][4] 
+Well we use the same structure like the test above, but instead to test our title if it equals to a given string, we test the DOM with `getByText()` and look if the string `Welcome to testing-dom!` `toBeDefined()`. `getByText()` is a query accessible to everyone and should be our top preference for non-form elements. For more detailed information check: [Which query should I use?][4] 
 
 ```typescript
 // new
@@ -135,7 +135,7 @@ it(`should have an image with alt text 'Angular Logo'`, async () => {
 
 We can also test if an `alt` for example of an image exits in the DOM. For this we use the query `getByAltText()` and `expect`, that there is one with the string `Angular logo` `toBeDefined()`.
 
-## Result 
+## Result
 
 Three tests for DOM testing our Angular app.
 
