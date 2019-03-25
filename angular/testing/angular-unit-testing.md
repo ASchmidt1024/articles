@@ -4,7 +4,7 @@ This article is about Angular Unit Testing and not Testing at all. It will give 
 
 Why Unit Test? Guess you have created a new Angular app and want to know if your components, pipes and services work as intended. The answer will give you Unit Tests. Writing the correct test to get the correct answer will be an important part. But keep in mind, this article cannot cover up all cases. Unit Testing is an extensive topic by his own. The goal of this article is to show you how to use Unit Testing in Angular apps and not philosophize about how tests should be written.
 
-Unit Tests allow us to guard against breaking changes. Once written we can use them to run as often as we needed. When we update our app and a test fails, we know exactly where in our app is the failure. We can also analyze code behavior for expected and unexpected results and we can reveal design mistakes. Maybe when we writing our test we come to a mistake in design of our app. Tests can help us.
+Unit Tests allow us to guard against breaking changes. Once written we can use them to run as often as we needed. When we update our app and a test fails, we know exactly where in our app is the failure. We can also analyse code behaviour for expected and unexpected results and we can reveal design mistakes. Maybe when we writing our test we come to a mistake in design of our app. Tests can help us.
 
 ## Introduction
 
@@ -59,7 +59,7 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
 ```
 
-At the top we `import` two tools from the Angular core testing package: `TestBed` and `async`. This tools we need to set up our testing environment. Then we `describe` the testing unit, which is our app component in this case. We then have a closure `() => {` for the `describe` function. Evertyhing in there will be executed by the test runner Angular comes with: [Karma][1]. 
+At the top we `import` two tools from the Angular core testing package: `TestBed` and `async`. This tools we need to set up our testing environment. Then we `describe` the testing unit, which is our app component in this case. We then have a closure `() => {` for the `describe` function. Everything in there will be executed by the test runner Angular comes with: [Karma][1]. 
 
 ```typescript
 beforeEach(async(() => {
@@ -81,7 +81,7 @@ it('should create the app', () => {
 });
 ```
 
-Then we get a couple of tests. The first one here checks if the app is already created. We always need to create the component in every `it` block for encapsulated testing. This will done by `TestBed` in the `fixture` variable. Then we can get our app by `fixture`, which holds our created component. With the `debugElement` we look at the `componentInstance`, which was created and which is our comonent at the end. We always end a `it` block by using the `expect` method. The `it` and `expect` are both Jasmine packages. So, at last of our first test we `expect` our `app` `toBeTruthy`, which means somehow existent.
+Then we get a couple of tests. The first one here checks if the app is already created. We always need to create the component in every `it` block for encapsulated testing. This will done by `TestBed` in the `fixture` variable. Then we can get our app by `fixture`, which holds our created component. With the `debugElement` we look at the `componentInstance`, which was created and which is our component at the end. We always end a `it` block by using the `expect` method. The `it` and `expect` are both Jasmine packages. So, at last of our first test we `expect` our `app` `toBeTruthy`, which means somehow existent.
 
 ```typescript
 it(`should have as title 'testing-app'`, () => {
@@ -102,7 +102,7 @@ it('should render title in a h1 tag', () => {
 });
 ```
 
-Finally we check `should render title in a h1 tag`. We create the component again and then we call `detectChanges` to trigger change detection. That is the only way to do it, since it runs automaticaly and not in the browser. With this the template gets rendered. Then with the `debugElement` we look at the `nativeElement` and expect in the compiled template a `h1` tag, which contains the string `Welcome to testing-app!`.
+Finally we check `should render title in a h1 tag`. We create the component again and then we call `detectChanges` to trigger change detection. That is the only way to do it, since it runs automatically and not in the browser. With this the template gets rendered. Then with the `debugElement` we look at the `nativeElement` and expect in the compiled template a `h1` tag, which contains the string `Welcome to testing-app!`.
 
 Now, to see [Karma][1] and [Jasmine][2] in Action just open a terminal again and run the tests.
 
@@ -122,7 +122,7 @@ Even in the terminal you see the debug information.
 
 ![Debugging in the console](img/testing-app_ng-test_failure_console.png)
 
-The error messages gives you some helpful information to fix the bug. In our case the unexpected title gives us two errors. The second and third test of our `app.component.spec.ts` fail. The title isn't `testing-app` anymore. Fixing the title and rerun the test gives us certainty about the flaw of our app.
+The error messages gives you some helpful information to fix the bug. In our case the unexpected title gives us two errors. The second and third test of our `app.component.spec.ts` fail. The title isn't `testing-app` any more. Fixing the title and rerun the test gives us certainty about the flaw of our app.
 
 ---
 
@@ -216,7 +216,7 @@ beforeEach(async(() => {
 }));
 ```
 
-In the first `beforeEach()` method we declare our module again. `TestBed` is the main testing object, which gives us access to all the testing utilities for configuring the Angular app. The call of `configureTestingModule` expect an javascript object where you declare the objects like in `@NgModule`, in this case `UserComponent`. If you are not using the CLI or any other [webpack][9] based setup you need to `compileComponents` after.
+In the first `beforeEach()` method we declare our module again. `TestBed` is the main testing object, which gives us access to all the testing utilities for configuring the Angular app. The call of `configureTestingModule` expect an JavaScript object where you declare the objects like in `@NgModule`, in this case `UserComponent`. If you are not using the CLI or any other [webpack][9] based setup you need to `compileComponents` after.
 
 ```typescript
 beforeEach(() => {
@@ -343,7 +343,7 @@ export class UserComponent implements OnInit {
 }
 ```
 
-We `import` the `DataService` from `../shared/data.service` and provide it in the `@Component` decorator like the `UserService`. The we create a property called `data` of type `string`. In the `constructor` we want to inject this to get access to the instance of it. This we do with `private dataService: DataService`. Now we can wright some tests. Get back to the file `user.component.spec.ts`.
+We `import` the `DataService` from `../shared/data.service` and provide it in the `@Component` decorator like the `UserService`. The we create a property called `data` of type `string`. In the `constructor` we want to inject this to get access to the instance of it. This we do with `private dataService: DataService`. Now we can write some tests. Get back to the file `user.component.spec.ts`.
 
 ```typescript
 it('should\'t fetch data successfully if not called asynchronously', () => {
