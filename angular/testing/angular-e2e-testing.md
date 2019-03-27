@@ -101,7 +101,7 @@ export class AppPage {
 }
 ```
 
-In this file you write the code to find the elements in your DOM. It's all about the selectors you know from CSS. But, step by step. First there are some `import`s like `browser` for interacting with - you guess it - the browser, `by` for selecting elements by CSS as mentioned and `element` for converting the selected element. By `export`ing the `class` `AppPage` Protractor will know to `navigateTo()` the specific `baseUrl`, which is defined in the file protractor.conf.js (see above). This will be done by a `Promise`, an asynchronous function call. Another [promise][12] comes with the following function `getTitleText()`. It `return`s if `getText()` of the headline `element` `'app-root h1'` (which is selected `by.css`) succeeds or fails. For the future: If you change the selector of your element, you change it in this file. You don't need to change anything in your tests. Apropo test. Let's come to the test file.
+In this file you write the code to find the elements in your DOM you want to test. It's all about the selectors you know from CSS. But, step by step. First there are some `import`s like `browser` for interacting with - you guess it - the browser, `by` for selecting elements by CSS as mentioned and `element` for converting the selected element. By `export`ing the `class` `AppPage` Protractor will know to `navigateTo()` the specific `baseUrl`, which is defined in the file protractor.conf.js (see above). This will be done by a `Promise`, an asynchronous function call. Another [promise][12] comes with the following function `getTitleText()`. It `return`s if `getText()` of the headline `element` `'app-root h1'` (which is selected `by.css`) succeeds or fails. For the future: If you change the selector of your element, you change it in this file. You don't need to change anything in your tests. Apropo test. Let's come to the test file.
 
 ## app.e2e-spec.ts
 
@@ -147,7 +147,11 @@ Now, after explaining the whole thing of end to end testing with Protractor, let
 npm run e2e
 ```
 
-Magic! Awesome. At this point it makes fun. And if all test successful passed you will love your job. 
+In your console you should see something similiar like the following output.
+
+![npm run e2e - console output][14]
+
+Do you see the green successfully passed test message? Magic! Awesome. At this point it makes fun. And if all test successful passed you will love your job. 
 
 ---
 
@@ -179,4 +183,5 @@ Magic! Awesome. At this point it makes fun. And if all test successful passed yo
 [10]: https://www.typescriptlang.org/ "TypeScript - JavaScript that scales"
 [11]: https://github.com/bcaudan/jasmine-spec-reporter "jasmine-spec-reporter - Real time console spec reporter for jasmine testing framework"  
 [12]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises "Using promises"  
-[13]: https://github.com/SeleniumHQ/selenium/wiki/Logging "Logging in WebDriver"
+[13]: https://github.com/SeleniumHQ/selenium/wiki/Logging "Logging in WebDriver"  
+[14]: img/npm-run-e2e_console-output.png "npm run e2e - console output"
