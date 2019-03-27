@@ -169,7 +169,8 @@ Do you see the green successfully passed test message? Magic! Awesome. At this p
 [TypeScript - JavaScript that scales][10]  
 [jasmine-spec-reporter - Real time console spec reporter][11]  
 [Using promises][12]  
-[Logging in WebDriver][13]
+[Logging in WebDriver][13]  
+[Asserting console logs in Protractor tests][15]  
 
 [1]: http://www.protractortest.org "Protractor - end to end testing for Angular"  
 [2]: https://protractor.angular.io "The official end to end testing framework for Angular apps"  
@@ -184,4 +185,5 @@ Do you see the green successfully passed test message? Magic! Awesome. At this p
 [11]: https://github.com/bcaudan/jasmine-spec-reporter "jasmine-spec-reporter - Real time console spec reporter for jasmine testing framework"  
 [12]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises "Using promises"  
 [13]: https://github.com/SeleniumHQ/selenium/wiki/Logging "Logging in WebDriver"  
-[14]: img/npm-run-e2e_console-output.png "npm run e2e - console output"
+[14]: img/npm-run-e2e_console-output.png "npm run e2e - console output"  
+[15]: https://medium.com/front-end-weekly/asserting-console-logs-in-protractor-tests-fee444833373 "Asserting console logs in Protractor tests"  
