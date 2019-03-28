@@ -7,9 +7,4 @@ Some stuff I wrote about
 [Angular Evaluation](angular/evaluation/angular-evaluation.md)  
 [Angular Unit Testing](angular/testing/angular-unit-testing.md)  
 [Angular DOM Testing](angular/testing/angular-dom-testing.md)  
-
----
-
-## Drafts
-
-[Angular E2E Testing](angular/testing/angular-e2e-testing.md) (DRAFT)  
+[Angular E2E Testing](angular/testing/angular-e2e-testing.md)  

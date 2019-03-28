@@ -1,20 +1,20 @@
 # Angular E2E Testing
 
-You might not know but Angular was built by software testers at Google. So testing is always the background behind the framework. Besides Unit Testing and DOM Testing End-to-End Testing is another part in the testing area; and it wouldn't be fun if you can't automate it. There is where [Protractor][1] comes in.
+You might not know but Angular was built by software testers at Google. So testing is always a background behind the framework. End-to-End Testing is besides [Unit Testing][16] and [DOM Testing][17] another part in the testing area; and it wouldn't be fun if you can't automate it. Here is where [Protractor][1] comes in. 
 
 ## Introduction
 
-[Protractor][2] is a framework for writing E2E tests especially for Angular. With it you can run tests in the browser, interacting with it as your user would do. It comes with every new Angular app. The easiest way to dive into end to end testing is creating a new Angular app. Open a command line (CLI).
+[Protractor][2] is a framework for writing E2E tests especially for Angular. With it you can run tests in the browser and interacting with it as your user would do. It comes with every new Angular app. So the easiest way to dive into end to end testing is creating a new app on the command line ([CLI][18]).
 
 ```console
 npm new testing-e2e
 ```
 
-By creating this new app one end to end test will be written already. Let's have a look at the folder 'e2e' in the root directory (same level like the folder 'src'). 
+This new app comes with an end to end test already. Let's have a look at the folder 'e2e' in the root directory (same level like the folder 'src'). 
 
 ## File structure
 
-In the folder 'e2e' we see two files and another folder with the following structure.
+In the folder 'e2e' you see two files and another folder with the following structure.
 
 - src
   * app.e2e-spec.ts
@@ -81,7 +81,9 @@ exports.config = {
 };
 ```
 
-First the `SpecReporter` is declared. `allScriptsTimeout` holds the timeout in milliseconds for each script run on the browser. The `specs` are relative to the location of this config and point to every file which ends with `*.e2e-spec.ts`. Keep that in mind, if you create another test. The `capabilities` option holds `chrome` as testing browser. It could be also `firefox` or `internet explorer` or `netscape`. Well, the last one is a joke. There is a [list of available capabilities][8]. For Chrome (and Firefox) Protractor can `directConnect` to the browser driver. As `baseUrl` `localhost` will be used at port `4200`. The test framework to use is `jasmine`. [Jasmine][9] is fully supported as test and assertion framework. The `jasmineNodeOpts` holds the options to be passed to Jasmine like `showColors` in the terminal, the `defaultTimeoutInterval` in ms before a test fails and a `function() {}` called to `print` Jasmine results. Last but not least `onPrepare()` is a callback function called once Protractor is ready and available and before the tests are executed. At this point global variables will be available from the test framework. TypeScript Node (`ts-node`) is required and works by registering the TypeScript compiler the config file 'tsconfig.e2e.json', at which we already look at (see above). With the following line Protractor `addReporter` to `jasmine`, the `SpecReporter`, which was declared in the first line. The `[jasmine-spec-reporter][11]` will be used to enhance the Protractor tests execution report on the command line.
+First the `SpecReporter` is declared. `allScriptsTimeout` holds the timeout in milliseconds for each script run on the browser. The `specs` are relative to the location of this config and point to every file which ends with `*.e2e-spec.ts`. Keep that in mind, if you create another test. The `capabilities` option holds `chrome` as testing browser. It could be also `firefox` or `internet explorer` or `netscape`. Well, the last one is a joke from the author. There is a [list of available capabilities][8]. For Chrome (and Firefox, but not Netscape) Protractor can `directConnect` to the browser driver. As `baseUrl` `localhost` will be used at port `4200`. The test framework to use is `jasmine`. [Jasmine][9] is fully supported as test and assertion framework. The `jasmineNodeOpts` holds the options to be passed to Jasmine like `showColors` in the terminal, the `defaultTimeoutInterval` in ms before a test fails and a `function() {}` called to `print` Jasmine results. 
+
+Last but not least `onPrepare()` is a callback function called once Protractor is ready and available and before the tests are executed. At this point global variables will be available from the test framework. TypeScript Node (`ts-node`) is required and works by registering the TypeScript compiler the config file 'tsconfig.e2e.json', at which we already look at (see above). With the following line Protractor `addReporter` to `jasmine`, the `SpecReporter`, which was declared in the first line. The `[jasmine-spec-reporter][11]` will be used to enhance the Protractor tests execution report on the command line.
 
 ## app.po.ts
 
@@ -157,6 +159,7 @@ Do you see the green successfully passed test message? Magic! Awesome. At this p
 
 ## Sources
 
+[Angular CLI - A command line interface for Angular][18]  
 [Protractor - end to end testing for Angular][1]  
 [The official end to end testing framework for Angular apps][2]  
 [Documentation for CLI][3]  
@@ -171,6 +174,8 @@ Do you see the green successfully passed test message? Magic! Awesome. At this p
 [Using promises][12]  
 [Logging in WebDriver][13]  
 [Asserting console logs in Protractor tests][15]  
+[Angular Unit Testing][16]  
+[Angular DOM Testing][17]  
 
 [1]: http://www.protractortest.org "Protractor - end to end testing for Angular"  
 [2]: https://protractor.angular.io "The official end to end testing framework for Angular apps"  
@@ -187,3 +192,6 @@ Do you see the green successfully passed test message? Magic! Awesome. At this p
 [13]: https://github.com/SeleniumHQ/selenium/wiki/Logging "Logging in WebDriver"  
 [14]: img/npm-run-e2e_console-output.png "npm run e2e - console output"  
 [15]: https://medium.com/front-end-weekly/asserting-console-logs-in-protractor-tests-fee444833373 "Asserting console logs in Protractor tests"  
+[16]: angular-unit-testing.md "Angular Unit Testing"  
+[17]: angular-dom-testing.md "Angular DOM Testing"  
+[18]: https://cli.angular.io/ "Angular CLI - A command line interface for Angular"
