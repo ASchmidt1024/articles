@@ -2,11 +2,11 @@
 
 Why take [Angular][1] for the next project? To determine your choice you should evaluate some aspects of this popular javascript framework. The goal of this article is to show how you can evaluate the use of Angular to give you the right arguments, without getting into technical deep details.
 
-[React][5] and [Vue][6] are the two other main players in this section. Before a comparison between the tools (e.g. [Angular or React][29]), we take a look at the differences between frameworks and libraries in general. And to save you some time, let me sum up something for you: Angular is still as good as React or as Vue, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
+[React][5] and [Vue][6] are the two other popular players in the section of JavaScript frameworks and libraries. Before a comparison between the tools (e.g. [Angular or React][29]), we take a look at the differences between frameworks and libraries in general. And to save you some time, let me sum up something for you: Angular is still as good as React or as Vue, but the right choice depends on a wide range of factors which make it more or less suitable for the clients enviroment.
 
 ## Where to start?
 
-The main argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hybrid apps. One codebase, any platform, e.g. for iOS and Android or progressive web apps. Past releases of Ionic were tightly coupled to Angular. Version 4 of the framework was re-engineered to work as a standalone Web Component library. So if it comes to this framework (Ionic) Angular, because of his history, is currently the best choice.
+The main argument for Angular is its place in [Ionic][14]. Ionic is used for mobile development to build cross platform hybrid apps. One codebase, any platform, e.g. for iOS and Android or progressive web apps. If there is no need for programming native apps, it decrease the cost of the frontend development. Past releases of Ionic were tightly coupled to Angular. Version 4 of the framework was re-engineered to work as a standalone Web Component library. So if it comes to this framework (Ionic) Angular, because of his history, is currently the best choice.
 
 Furthermore Angular is a mature framework and should be taken for big projects. If you have complex business logic, Angular is your choice. If you have complex routing or form validation, Angular is your choice. If you wanna write closed or stand alone applications with one codebase, Angular is your choice.
 
@@ -43,11 +43,7 @@ Angular has more features out of the box than React. This can be a good thing, t
 
 (Source: [React VS Angular][16])
 
-As mentioned it before we do not want to get into technical depth, but if you're interested in it, here are some buzzwords Angular comes with: Dependency injection, templates, routing, ajax requests, form building, CSS encapsulation, XSS protection, utilities for unit testing and [RxJS][19]. Well, very technically. But the following two interesting things are worth to take a closer look at: [TypeScript][11] and [Angular Elements][20].
-
-### TypeScript
-
-[TypeScript][11] is a programming language developed by [Microsoft][17] and actively adopt by Angular. It is a superset of JavaScript that compiles to clean, simple [JavaScript][10]. TypeScript is influenced by Java and .NET, so developers are likely to find it easier to learn than plain JavaScript. Well we switched from the tool to the environment. More about this later at the section [Human Resources](#human-resources).
+As mentioned it before we do not want to get into technical depth, but if you're interested in it, here are some buzzwords Angular comes with: Dependency injection, templates, routing, ajax requests, form building, CSS encapsulation, XSS protection, utilities for unit testing and [RxJS][19]. Well, very technically. But the following interesting thing is worth to take a closer look at: [Angular Elements][20].
 
 ### Angular Elements
 
@@ -71,13 +67,15 @@ As mentioned it before we do not want to get into technical depth, but if you're
 
 ## Framework VS Library
 
-Angular is a framework, React is a library. But what's the difference between both? Short, frameworks tell you how you should structure your project, whereas libraries are building blocks that you can use anywhere in your code, in your excisting application. In other words: Frameworks call you how to code your application and within your code you call libraries to do things. Frameworks contain libraries. Libraries can easily be integrated into any existing application, e.g. by adding a `<script>` tag. With a framework the application self needs to be part of it. The framework parse it and generate the code the developers otherwise would have had to write themselves. With this in mind, if your project is a new application or a complex component of an existing one, Angular will be the right tool.
+Angular is a framework, React is a library. But what's the difference between both? Short, frameworks tell you how you should structure your project, whereas libraries are building blocks that you can use anywhere in your code, in your excisting application. In other words: Frameworks call you how to code your application and within your code you call libraries to do things. Frameworks contain libraries. Libraries can easily be integrated into any existing application, e.g. by adding a `<script>` tag. With a framework the application self needs to be part of it. The framework parse it and generate the code the developers otherwise would have had to write themselves. 
+
+Frameworks are generally designed to help the developer. Angular is a large framework, but it makes it easier to create complex cases, as long as you stay in the framework. It comes with with the most features and should not (!) be used for small applications or extensions. With this in mind, if your project is a new application or a complex component of an existing one, Angular will be the right tool.
 
 A normal development starts typically with a framework and fill out functions defined in additional libraries throught an API. Both of them, libraries and frameworks, define API, which is used for developer to use.
 
 ## Perfomance
 
-Angular, React and even Vue are comparatively faster than other JavaScript frameworks. You should not take performance into account to draw the [conclusion](#Conclusion) because it mainly relies on the size of the application and optimization of code.
+[Angular, React and even Vue are comparatively faster than other JavaScript frameworks.][54] But you should not take performance into account to draw the [conclusion](#Conclusion) because it mainly relies on the size of the application and optimization of code.
 
 ## Long Term Support
 
@@ -85,7 +83,7 @@ Angular, React and even Vue are comparatively faster than other JavaScript frame
 
 ## Human Resources
 
-Another important question to ask before choosing Angular - or general any library, tool or framework - is which developers are at your disposal. "It's standing and it's falling with the people." used to say my grandma. And so if there are some high skilled Angular developers available to realize the project, just choose it. But keep in mind if there are only one or two developer on board, the project might depends on these guys, if you don't have access to others. Good developers are rare these times.
+Another important question to ask before choosing Angular - or general any library, tool or framework - is which developers are at your disposal. "It's standing and it's falling with the people." used to say my grandma. And so if there are some high skilled Angular developers available to realize the project, just choose it. But keep in mind if there are only one or two developer on board, the project might depends on these guys, if you don't have access to others.
 
 ## Facts
 
@@ -122,7 +120,7 @@ Have a look at the [framework matrix with a closer comparison][29] (bottom of th
 
 ## Conclusion
 
-It depends on the clients environment wether Angular should be chosen. You have to ask the right questions. Do you need Ionic for mobile applications or progressive web apps? Do you have a complex business logic in your project or a stand alone application? Do some Angular apps in the project already exist? Are there developers available who know Angular or TypeScript or a similar programming language? If one or more questions can be answered with yes, then Angular is a really good choice you can take. 
+It depends on the clients environment wether Angular should be chosen. You have to ask the right questions. Do you need Ionic for mobile applications or progressive web apps? Do you have a complex business logic in your project or a stand alone application? Do some Angular apps in the project already exist? If one or more questions can be answered with yes, then Angular is a really good choice you can take. Additionally are there developers available who know Angular or TypeScript or a similar programming language? Angular has very large strengths in the development of detached progressive web apps in the form of single page apps.
 
 On the develpers site, the following chart shows the technology’s satisfaction ratio over its total usage (Source: [stateofjs.com][44]).
 
@@ -171,6 +169,8 @@ On the develpers site, the following chart shows the technology’s satisfaction
 [Angular - bestofjs.org][39]  
 [React - bestofjs.org][40]   
 [Front-end Frameworks - Conslusion, stateofjs.com][44]  
+[npm trends, angular vs react vs vue][53]   
+[JavaScript Frameworks, Performance Comparison][54]  
 
 
   
@@ -227,3 +227,5 @@ On the develpers site, the following chart shows the technology’s satisfaction
 [50]: https://www.monster.de/jobs/suche/?q=React&cy=DE&rad=20&intcid=swoop_HeroSearch_DE "React Jobs, Monster"  
 [51]: img/stateofjs.com_2018_frontend-frameworks-conclusion.png "stateofjs.com - 2018, Overall Front-end Frameworks Conclusion"  
 [52]: https://medium.com/front-end-weekly/react-vs-angular-vs-vue-js-a-complete-comparison-guide-d16faa185d61 "React vs Angular vs Vue.js: A Complete Comparison Guide"  
+[53]: https://www.npmtrends.com/angular-vs-react-vs-vue "npm trends, angular vs react vs vue"  
+[54]: https://medium.com/@ajmeyghani/javascript-frameworks-performance-comparison-c566d19ab65b "JavaScript Frameworks, Performance Comparison"  
